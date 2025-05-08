@@ -1,0 +1,251 @@
+/* ===== GENERAL REUSABLE STYLES ===== */
+/* Base layout and typography */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header, footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(to right, #007cf0, #00dfd8);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    font-family: 'Segoe UI', sans-serif;
+    text-shadow: 1px 1px #00000055;
+  }
+  
+  nav {
+    background-color: #222;
+    padding: 10px 0;
+  }
+  
+  nav table {
+    margin: auto;
+    width: 80%;
+  }
+  
+  nav td a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  nav td a:hover,
+  nav td a.active {
+    background-color: #00dfd8;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  /* Main content */
+  main {
+    padding: 40px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  main h2,
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #431C0B;
+    margin-bottom: 10px;
+  }
+  
+  main article {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  main ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  main ul li {
+    margin: 6px 0;
+  }
+  
+  /* Images */
+  img {
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+    margin-top: 40px;
+    border-top: 4px solid #00dfd8;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  /* ===== PAGE-SPECIFIC STYLES ===== */
+  
+  /* About Page */
+  body.about header {
+    border-bottom: 3px solid #00dfd8;
+  }
+  
+  body.about footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
+  
+  /* Services Page */
+  body.services header {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+  }
+  
+  body.services ul li {
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-left: 5px solid #ff5e62;
+    box-shadow: 0 0 5px #ccc;
+    list-style-type: "✔️ ";
+  }
+  
+  body.services footer {
+    box-shadow: 0 -4px 10px #ff5e6233;
+  }
+  
+  /* Portfolio Page */
+  body.portfolio header {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+  }
+  
+  body.portfolio article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px #00000011;
+  }
+  
+  body.portfolio ul {
+    padding-left: 20px;
+  }
+  
+  body.portfolio footer {
+    border-top: 4px dotted #6a11cb;
+  }
+  
+  /* Contact Page */
+  body.contact header {
+    background-color: #4e54c8;
+  }
+  
+  body.contact form {
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000022;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  form input,
+  form textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #6c70e1;
+  }
+  
+  body.contact footer p:hover {
+    color: #4e54c8;
+    cursor: pointer;
+  }
+  
+  /* Blog Page */
+  body.blog header {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+  }
+  
+  body.blog article {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-left: 4px solid #ff7e5f;
+    box-shadow: 0 0 8px #00000022;
+    border-radius: 5px;
+  }
+  
+  body.blog h4 {
+    font-size: 1.3em;
+    color: #ff5722;
+  }
+  
+  body.blog footer {
+    text-align: left;
+    padding-left: 20px;
+    background-color: #2f2f2f;
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 600px) {
+    nav table,
+    nav tr,
+    nav td {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    form input,
+    form textarea {
+      width: 100%;
+    }
+  
+    article {
+      margin: 15px 0 !important;
+    }
+  }
+  
