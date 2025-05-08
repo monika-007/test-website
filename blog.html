@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Blog - Code Master</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Code Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="blog">
-    <header>
-        <h1 align="center">Code Master</h1>
-    </header>
-    
-    <nav>
-        <table width="80%" align="center">
-            <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="about.html">About</a></td>
-                <td><a href="services.html">Services</a></td>
-                <td><a href="portfolio.html">Portfolio</a></td>
-                <td><a href="contact.html">Contact</a></td>
-                <td><a href="blog.html">Blog</a></td>
-            </tr>
 
-        </table>
-        
-       
-    </nav>
-    <main>
-        <section>
-            <table height="100%" width=Auto cellpadding="10px" cellspacing="0px" valign="top">
-                <tr>
-                    <td colspan="2">
-                        <h2>
-                            <font color="#431C0B">📝 Blog
-                        </h2>
-                        <article>
-                            Welcome to the Code Master Blog – your source for programming tips, study guides, tech trends, and career advice!
-                            <br />
-                            We regularly publish articles to help students and developers stay updated, improve skills, and succeed in their learning journey.
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#">Code Master</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                        </article>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <article>
-                            <h4>
-                                📚 What You’ll Find Here
-                            </h4>
-                            <ul>
-                                <li>🔧 Programming Tips & Tricks
-                                    <br/>
-                                    Shortcuts, best practices, and helpful coding habits for C, C++, Java, and HTML.
-                                </li>
-                                <br/>
-                                <li>🧠 Quiz & Concept Breakdowns
-                                    <br/>
-                                    In-depth explanations of quiz questions and why certain answers are correct.                                </li>
-                                <br/>
-                                <li>📘 Study Guides & Exam Prep
-                                    <br/>
-                                    Structured study plans, topic breakdowns, and last-minute revision materials.                                </li>
-                                <br/>
-                                <li>🚀 Career & Internship Advice
-                                    <br/>
-                                    Resume tips, interview guidance, and how to find internships based on your progress.                                </li>
-                                <br/>
-                            </ul>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Header -->
+  <header class="text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">📝 Code Master Blog</h1>
+      <p class="lead">Stay sharp with tips, guides, and career advice!</p>
+    </div>
+  </header>
 
-                        </article>
-                        <article>
-                            <h4>
-                                🆕 Recent Posts
-                            </h4>
-                            <ul>
-                                <li>“Top 5 Mistakes Beginners Make in C++”</li>
-                                <li> “How to Prepare for a Coding Internship in 30 Days”</li>
-                                <li>“Understanding Loops: A Beginner’s Guide”</li>
-                                <li>“HTML Basics You Must Know Before Your Exam”</li>
-                            </ul>
-                        </article>
-                    </td>
-            
-                </tr>
-            </table>
-        </section>
+  <!-- Blog Content -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100" aria-describedby="blog-1">
+          <div class="card-body">
+            <h3 class="card-title" id="blog-1">📚 What You’ll Find Here</h3>
+            <ul>
+              <li>🔧 Tips & Tricks for C, C++, Java, HTML</li>
+              <li>🧠 Quiz explanations and insights</li>
+              <li>📘 Study guides and prep strategies</li>
+              <li>🚀 Resume and internship advice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    </main>
-    <footer>
-        <p align="center">@mywebsite 2025 , All rights reserved</p>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100" aria-describedby="blog-2">
+          <div class="card-body">
+            <h3 class="card-title" id="blog-2">🆕 Recent Posts</h3>
+            <ul>
+              <li>Top 5 Mistakes Beginners Make in C++</li>
+              <li>How to Prepare for a Coding Internship in 30 Days</li>
+              <li>Understanding Loops: A Beginner’s Guide</li>
+              <li>HTML Basics You Must Know Before Your Exam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <span>@mywebsite 2025, All rights reserved</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
