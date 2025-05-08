@@ -51,6 +51,25 @@ nav td a.active {
   border-radius: 5px;
 }
 
+.carousel-item img {
+  object-fit: cover; /* Ensures full container is covered, but keeps image proportional */
+  height: 50vh;       /* Half of the viewport height */
+  width: 100%;        /* Full width */
+}
+
+.carousel-inner {
+  height: 50vh;       /* Makes the inner container consistent */
+}
+
+.carousel-caption {
+  bottom: 10px;        /* Ensures it's not cropped */
+  background: rgba(0, 0, 0, 0.5); /* Adds dark background for readability */
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
 /* Main content */
 main {
   padding: 40px;
